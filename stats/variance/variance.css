@@ -1,0 +1,31 @@
+body
+{
+        background-color: cornsilk;
+}
+.navbarVar
+{
+        background-color: black;
+}
+.navbarVar li
+{
+        float: left;
+        list-style: none;
+        margin: 13px 20px;              
+}
+
+.navbarVar ul
+{
+        overflow: auto;
+}
+
+.navbarVar li a
+{
+        text-decoration: none;
+        color: white;
+        padding: 13px;
+}
+
+.navbarVar input
+{
+        border: 2px solid black;                
+}
