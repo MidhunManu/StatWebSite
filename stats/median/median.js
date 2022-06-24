@@ -1,9 +1,20 @@
 function findMedian() {
         var array = document.getElementById("median").value;
-        var myFunc = num => Number(num);
-        var intArr = Array.from(array,myFunc)
-; 
+        // var myFunc = num => Number(num);
+        // var intArr = Array.from(array,myFunc)
+
+        var intArr = array.split(',').map(function(item) {
+                return parseInt(item, 10);
+        });
+
+
+        // var len = intArr.length;
+
+        // if(len % 2 != 0) {
+        //         document.getElementById("res").innerHTML = intArr[len / 2];
+        // }
         var len = intArr.length;
+        console.log(intArr);
         
         // var sum = 0;
         // console.log(len);
@@ -11,7 +22,7 @@ function findMedian() {
         // console.log(intArr[1]);
 
         var ctr = 0;
-        for(var i = 0; i < len; i=i+2) {
+        for(var i = 0; i < len; i=i+1) {
                 ctr++;
                 // newArr[i] = intArr[i]
         }
@@ -24,16 +35,9 @@ function findMedian() {
         }
 
         else {
-                console.log("length = "+len);                
-                // console.log(("midian = "+(intArr[(len+1)/2 - 2])))
-                var first = intArr[(len+1)/2];
-                var second = intArr[(len+1)/2 - 2];
-                // console.log(first);
-                // console.log(second);
-
-                // console.log((first + second)/2);
-                // console.log("median = "+(first+second)/2);
-
+                console.log("length = "+len);
+                var first = intArr[((len)/2)-1];
+                var second = intArr[((len)/2)];
                 document.getElementById("res").innerHTML = (first + second) / 2;                
         }
 }
