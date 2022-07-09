@@ -1,0 +1,13 @@
+body {
+        background-color: cornsilk;
+      }
+      
+.navbarMode {
+        background-color: black;
+        height: 45px;
+}
+      
+#navHEADING {
+        color: white;
+        padding: 10px;
+}

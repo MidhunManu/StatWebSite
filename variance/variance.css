@@ -1,0 +1,26 @@
+/* body {
+  background-color: cornsilk;
+}
+
+.navbarVar {
+  background-color: black;
+  height: 45px;
+}
+
+#navHead {
+  color: white;
+} */
+
+body {
+  background-color: cornsilk;
+}
+
+.navbarVar {
+  background-color: black;
+  height: 45px;
+}
+
+#headVar {
+  color: white;
+  padding: 10px;
+}

@@ -30,5 +30,12 @@ function findCovariance() {
         });
 
         var len = array1.length;
-        document.getElementById("res").innerHTML = covariance(array1 , array2 , len);
+
+        if(array1.length == array2.length) { 
+                document.getElementById("res").innerHTML = covariance(array1 , array2 , len);
+        }
+
+        else {
+                document.getElementById("res").innerHTML = "<h3>both the data sets must have same size<h3>"
+        }
 }
